@@ -1,6 +1,6 @@
-import App from "@/App";
 import AdminLayout from "@/layouts/AdminLayout";
 import MainLayout from "@/layouts/MainLayout";
+import Home from "@/pages/Home";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -10,7 +10,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <Home />,
+      },
+      {
+        path: "/categories",
+        element: <div>Categories</div>,
+      },
+      {
+        path: "/shop",
+        element: <div>Shop</div>,
+      },
+      {
+        path: "/contact",
+        element: <div>Contact</div>,
       },
     ],
   },
