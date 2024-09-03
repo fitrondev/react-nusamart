@@ -11,6 +11,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        "jakarta-sans": ["var(--font-jakarta-sans)", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
