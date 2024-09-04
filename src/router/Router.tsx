@@ -1,4 +1,5 @@
 import AdminLayout from "@/layouts/AdminLayout";
+import AuthLayout from "@/layouts/AuthLayout";
 import MainLayout from "@/layouts/MainLayout";
 import Home from "@/pages/Home";
 import { createBrowserRouter } from "react-router-dom";
@@ -33,6 +34,21 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <div>Hello World</div>,
+      },
+    ],
+  },
+
+  {
+    path: "/auth",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "/auth/login",
+        element: <div>Login</div>,
+      },
+      {
+        path: "/auth/register",
+        element: <div>Register</div>,
       },
     ],
   },
