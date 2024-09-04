@@ -27,7 +27,7 @@ const Header = () => {
             <ProfileDropdown />
           ) : (
             <Button asChild>
-              <Link to="/login">Login</Link>
+              <Link to="/auth/login">Login</Link>
             </Button>
           )}
         </div>

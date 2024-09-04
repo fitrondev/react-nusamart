@@ -32,7 +32,7 @@ const MobileMenu = () => {
 
           {!login && (
             <Link
-              to="/login"
+              to="/auth/login"
               className="font-semibold hover:underline text-2xl">
               Login
             </Link>
