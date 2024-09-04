@@ -1,10 +1,10 @@
-import { Button } from "./components/ui/button";
+import Hero from "./components/layouts/Hero";
 
 const App = () => {
   return (
-    <div className="container">
-      <Button>Click me</Button>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 };
 export default App;
