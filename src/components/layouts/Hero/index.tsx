@@ -13,7 +13,7 @@ const Hero = () => {
               <h1 className="text-xl lg:text-2xl font-semibold uppercase text-red-500">
                 Modern Collection 🔥
               </h1>
-              <p className="lg:text-lg">
+              <p className="text-2xl sm:text-3xl lg:text-5xl font-bold">
                 Grab Up to 20% Off On Selected Products.
               </p>
             </div>
