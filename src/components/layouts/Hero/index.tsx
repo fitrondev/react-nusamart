@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import HeroImg from "@/assets/images/hero.svg";
@@ -9,11 +8,7 @@ const Hero = () => {
     <section>
       <div className="container h-[calc(100vh-4rem)] flex items-center justify-center">
         <div className="w-full h-full lg:h-[31.25rem] flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between gap-10 lg:gap-0">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="lg:flex-1 flex flex-col items-center lg:items-start justify-center gap-4 lg:gap-6">
+          <div className="lg:flex-1 flex flex-col items-center lg:items-start justify-center gap-4 lg:gap-6">
             <div className="text-center lg:text-start">
               <h1 className="text-xl lg:text-2xl font-semibold uppercase text-red-500">
                 Modern Collection 🔥
@@ -36,18 +31,14 @@ const Hero = () => {
                 </Link>
               </Button>
             </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            className="lg:flex-1 flex items-center justify-center">
+          </div>
+          <div className="lg:flex-1 flex items-center justify-center">
             <img
               src={HeroImg}
               alt=""
               className="size-[350px] sm:size-[450px] md:size-[600px] lg:size-full"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
