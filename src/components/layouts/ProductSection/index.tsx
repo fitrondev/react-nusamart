@@ -21,7 +21,7 @@ const ProductSection = () => {
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 place-items-center gap-5">
           {all_products
             .sort(() => Math.random() - Math.random())
-            .slice(0, 5)
+            .slice(0, 10)
             .map((item, index) => (
               <ProductCard item={item} key={index} />
             ))}
