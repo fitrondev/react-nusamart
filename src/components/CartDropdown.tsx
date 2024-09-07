@@ -14,7 +14,7 @@ const CartDropdown = () => {
     <DropdownMenu>
       <DropdownMenuTrigger className="relative p-2 bg-primary rounded-sm">
         <ShoppingBag className="size-5 text-background" />
-        <span className="absolute -top-1 -right-1 px-1 text-xs font-semibold bg-red-500 text-primary-foreground rounded-full select-none">
+        <span className="absolute -top-1 -right-1 px-1 text-xs font-semibold bg-rose-500 text-primary-foreground rounded-full select-none">
           2
         </span>
       </DropdownMenuTrigger>

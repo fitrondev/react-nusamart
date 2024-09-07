@@ -8,7 +8,7 @@ const ProductSection = () => {
   return (
     <section className="my-10 py-10">
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-5">
           <TitleSection title="Get Product" />
 
           <div>
@@ -18,7 +18,7 @@ const ProductSection = () => {
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-5 place-items-center gap-5">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 place-items-center gap-5">
           {all_products
             .sort(() => Math.random() - Math.random())
             .slice(0, 5)

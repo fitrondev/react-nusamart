@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="w-full h-full lg:h-[31.25rem] flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between gap-10 lg:gap-0">
           <div className="lg:flex-1 flex flex-col items-center lg:items-start justify-center gap-4 lg:gap-6">
             <div className="text-center lg:text-start">
-              <h1 className="text-xl lg:text-2xl font-semibold uppercase text-red-500">
+              <h1 className="text-xl lg:text-2xl font-semibold uppercase text-rose-500">
                 Modern Collection 🔥
               </h1>
               <p className="text-2xl sm:text-3xl lg:text-5xl font-bold">

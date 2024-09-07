@@ -8,10 +8,10 @@ const Categories = () => {
       <div className="container">
         <TitleSection title="Select Categories" />
 
-        <div className="mt-10 grid grid-cols-5 place-items-center gap-5">
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 place-items-center gap-5">
           {categories.map((item, index) => (
             <Link
-              to={`/products/${item.name}`}
+              to={`/products/?category=${item.slug}`}
               key={index}
               className="hover:scale-110 transition-all duration-300 ease-in-out">
               <div className="space-y-2">
