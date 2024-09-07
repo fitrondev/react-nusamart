@@ -14,6 +14,7 @@ const ProductCard = ({
   item,
 }: {
   item: {
+    _id: string;
     image: string;
     name: string;
     price: number;
@@ -23,13 +24,13 @@ const ProductCard = ({
 }) => {
   return (
     <Card className="relative w-[320px] sm:size-full">
-      <Link to={`/product/${item.name.toLowerCase()}`}>
+      <Link to={`/products/detail-product/${item._id}`}>
         <CardHeader className="bg-rose-300 rounded-t-lg items-center">
           <img src={item.image} alt="" className="size-40" />
         </CardHeader>
       </Link>
       <CardContent className="space-y-2">
-        <Link to={`/product/${item.name.toLowerCase()}`}>
+        <Link to={`/products/detail-product/${item._id}`}>
           <CardTitle className="text-2xl line-clamp-2 hover:underline">
             {item.name}
           </CardTitle>
