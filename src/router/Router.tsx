@@ -1,6 +1,8 @@
 import AdminLayout from "@/layouts/AdminLayout";
 import AuthLayout from "@/layouts/AuthLayout";
 import MainLayout from "@/layouts/MainLayout";
+import Login from "@/pages/Auth/Login";
+import Register from "@/pages/Auth/Register";
 import Home from "@/pages/Home";
 import Products from "@/pages/Products";
 import DetailProduct from "@/pages/Products/DetailProduct";
@@ -54,11 +56,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/auth/login",
-        element: <div>Login</div>,
+        element: <Login />,
       },
       {
         path: "/auth/register",
-        element: <div>Register</div>,
+        element: <Register />,
       },
     ],
   },
